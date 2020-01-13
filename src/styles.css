@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #ff3d63;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 2px lightgray;
+}
+
+.btn-danger:hover {
+  background-color: #ea3358;
+}
+
+b {
+  color: #6351ce;
+}

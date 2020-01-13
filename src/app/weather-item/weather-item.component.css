@@ -1,0 +1,35 @@
+.temp{
+  font-size: 1.4rem;
+}
+.col{
+  text-align: left;
+
+}
+.col-btn{
+  text-align: right;
+
+}
+.col-temp{
+  text-align: right;
+}
+
+.weather-element {
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #ccc;
+  padding: 10px;
+  margin: 1rem auto;
+  transition: 0.4s all;
+}
+
+.weather-element:hover {
+  transform: translateY(-5px);
+}
+
+.info {
+  text-transform: uppercase;
+}
+
+.badge{
+  color:white;
+  background-color:#6351ce;
+}

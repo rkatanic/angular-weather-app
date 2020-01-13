@@ -1,0 +1,22 @@
+<div class="list">
+  <h3>Saved Lists</h3>
+  <form #formCtrl="ngForm">
+    <mat-form-field>
+      <input required matInput [(ngModel)]="listName" name="listName" id="listName" type="text" placeholder="Enter list name ...">
+      <button mat-button *ngIf="listName" matSuffix mat-icon-button aria-label="Clear" (click)="listName=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="onSaveList()" [disabled]="!formCtrl.form.valid">Save List</button>
+  </form>
+  <article class="a-list" *ngFor='let list of lists' (click)="onLoadList(list)">
+    <div class="col">
+      <div class="col-btn">
+        <button class="btn btn-danger" (click)="deleteList($event, list)">X</button>
+      </div>
+      <h4>{{list.listName}}</h4>
+      <p><b>Cities:</b>  {{list.cities.join(', ')}}</p>
+
+    </div>
+  </article>
+</div>

@@ -1,0 +1,58 @@
+.list {
+  margin: 2rem 2rem;
+}
+
+.a-list {
+  box-shadow: 1px 1px 6px #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  width: 20rem;
+  border-radius: 5px;
+}
+
+.col-btn {
+  text-align: right;
+}
+
+article:hover  {
+  opacity: 0.9;
+  color:white;
+  background-color: #6351ce;
+  cursor: pointer;
+}
+article:hover b{
+  color:white;
+}
+
+article {
+  text-align: left;
+  transition: 0.3s all;
+}
+
+mat-form-field {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px) {
+  .list {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px) {
+  .list {
+    margin-left: 20rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+  .list {
+    margin-left: 25rem;
+  }
+}

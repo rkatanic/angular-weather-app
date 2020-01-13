@@ -1,0 +1,25 @@
+
+mat-toolbar{
+  height:5rem;
+  background-color: #6351ce;
+  color:white;
+}
+
+p{
+  margin-right: 0.5rem;
+}
+
+.right-align{
+  text-align: right;
+  margin-left: auto;
+}
+
+fa-icon{
+  margin-left: 2rem;
+  font-size: 2.4rem;
+  transition: 0.4s all;
+}
+
+fa-icon:hover{
+  transform: translateY(-3px);
+}

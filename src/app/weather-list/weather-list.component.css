@@ -1,0 +1,42 @@
+.weather-list {
+  text-align: center;
+  width: 40rem;
+  margin: auto 5rem;
+  transition: 0.3s all;
+}
+
+.msg {
+  width: 50%;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #6351ce;
+  margin: 5rem auto;
+  transition: 0.4s all;
+}
+
+@media screen and (max-width: 600px) {
+  .weather-list {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px) {
+  .weather-list {
+    width: 30rem;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px) {
+  .weather-list {
+    width: 40rem;
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+  .weather-list {
+    margin-left: 8rem;
+    width: 50rem;
+  }
+}

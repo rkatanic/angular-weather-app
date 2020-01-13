@@ -1,0 +1,32 @@
+h6 {
+  color: white;
+}
+
+.page-footer {
+  background-color: #1d212d;
+}
+
+p {
+  color: lightgray;
+}
+
+a {
+  color: lightgray;
+}
+
+a:hover,
+.to-top {
+  color: #ff3d63;
+}
+
+hr{
+  background-color:#ff3d63;
+}
+
+fa-icon{
+  color:#ff3d63;
+}
+
+.footer-d{
+  background-color: #13161e;
+}

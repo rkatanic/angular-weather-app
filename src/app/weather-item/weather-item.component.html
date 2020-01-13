@@ -1,0 +1,13 @@
+<article class="weather-element">
+	<div class="col">
+		<div class="col-btn">
+			<button class="btn btn-danger" (click)="deleteItem()">X</button>
+		</div>
+		<h6><span class="badge">{{weatherItem.country}}</span></h6>
+		<h2>{{weatherItem.city}}</h2>
+		<p class="info">{{weatherItem.description}}</p>
+	</div>
+	<div class="col col-temp">
+		<p class="temp">{{weatherItem.temperature}} <b>°C</b></p>
+	</div>
+</article>
