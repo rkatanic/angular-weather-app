@@ -1,13 +1,24 @@
 <article class="weather-element">
 	<div class="col">
 		<div class="col-btn">
+
+
 			<button class="btn btn-danger" (click)="deleteItem()">X</button>
+			<h2 style="text-align:center;"><h6><span class="badge">{{weatherItem.country}}</span></h6>{{weatherItem.city}}</h2>
+
 		</div>
-		<h6><span class="badge">{{weatherItem.country}}</span></h6>
-		<h2>{{weatherItem.city}}</h2>
-		<p class="info">{{weatherItem.description}}</p>
+
+		<div id="row">
+			<p id="temp">{{weatherItem.temperature}} <b>°C</b>
+			</p>
+			<p id="icon">
+				<img id="wicon" src="http://openweathermap.org/img/w/{{weatherItem.icon}}.png" alt="Weather icon">{{weatherItem.description}}
+			</p>
+		</div>
+
 	</div>
-	<div class="col col-temp">
-		<p class="temp">{{weatherItem.temperature}} <b>°C</b></p>
+	<div style="margin:auto 1rem;">
+		<p class="humidity"><b id="black">Humidity: </b> {{weatherItem.humidity}} <b>%</b></p>
+		<p class="pressure"><b id="black">Pressure: </b> {{weatherItem.pressure}} <b>hPa</b></p>
 	</div>
 </article>

@@ -16,7 +16,7 @@ export class WeatherSearchComponent implements OnInit {
   onSubmit(form: NgForm) {
     this.weatherService.searchWeatherData(form.value.location).subscribe(
       data => {
-        const WEATHER_ITEM = new WeatherItem(data.name, data.weather[0].description, data.main.temp,data.sys.country);
+        const WEATHER_ITEM = new WeatherItem(data.name, data.weather[0].description, data.main.temp, data.main.humidity, data.main.pressure, data.sys.country,data.weather[0].icon);
         this.weatherService.addWeatherItem(WEATHER_ITEM);
       }
     );

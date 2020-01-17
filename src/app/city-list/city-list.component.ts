@@ -31,7 +31,7 @@ export class CityListComponent implements OnInit {
     for (let i = 0; i < list.cities.length; i++) {
       this.weatherService.searchWeatherData(list.cities[i])
         .subscribe(data => {
-          const weatherItem = new WeatherItem(data.name, data.weather[0].description, data.main.temp,data.sys.country);
+          const weatherItem = new WeatherItem(data.name, data.weather[0].description, data.main.temp, data.main.humidity, data.main.pressure, data.sys.country, data.weather[0].icon);
           this.weatherService.addWeatherItem(weatherItem);
         });
     }

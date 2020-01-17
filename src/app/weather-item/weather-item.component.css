@@ -1,16 +1,35 @@
-.temp{
-  font-size: 1.4rem;
-}
-.col{
+.col {
   text-align: left;
-
 }
-.col-btn{
-  text-align: right;
 
-}
-.col-temp{
+.col-btn {
   text-align: right;
+}
+
+#temp {
+  text-align: right;
+}
+
+#icon {
+  text-transform: uppercase;
+  margin-top: -3.2rem;
+}
+
+#black {
+  color: black;
+}
+
+.humidity {
+  text-align: left;
+}
+
+.pressure {
+  text-align: right;
+  margin-top: -2.5rem;
+}
+
+.row {
+  text-align: center;
 }
 
 .weather-element {
@@ -29,7 +48,7 @@
   text-transform: uppercase;
 }
 
-.badge{
-  color:white;
-  background-color:#6351ce;
+.badge {
+  color: white;
+  background-color: #6351ce;
 }
